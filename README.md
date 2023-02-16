@@ -21,6 +21,10 @@ Just run `docker run --rm -v ${pwd}:/sitespeed.io sitespeed:<tag> <website url>`
 Examples: 
 `docker run --rm -v ${pwd}:/sitespeed.io sitespeed:26.1.0 http://www.sitespeed.io/`. 
 
-The default browser is Chrome, if you want to test on Firefox, 
+The default browser is Chrome, 
+
+- if you want to test on Firefox, 
 `docker run --rm -v ${pwd}:/sitespeed.io sitespeed:26.1.0 -b firefox http://www.sitespeed.io/`
 
+- if you want to test on Edge, 
+`docker run --rm -v ${pwd}:/sitespeed.io sitespeed:26.1.0 -b edge http://www.sitespeed.io/`
