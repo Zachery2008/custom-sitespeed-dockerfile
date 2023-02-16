@@ -32,7 +32,7 @@ RUN buildDeps='wget ca-certificates build-essential' && \
     #apt-get purge -y --auto-remove $buildDeps
 
 # Install Node https://github.com/nodesource/distributions
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
     apt-get install -y nodejs
 RUN apt-get install -q -y aptitude
 RUN aptitude install -q -y npm

@@ -8,7 +8,7 @@ Every time of building image:
 - lastest Chrome 
 - latest Firefox 
 - latest Edge 
-- latest Node-18.x
+- latest [Node-lts](https://nodejs.org/en/)
 
 ### How to build our custom docker image
 In terminal, just run `./build.sh`. The script will download the latest sitespeed resource code first, then build the image based on `custom.dockerfile`. 
