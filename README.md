@@ -15,3 +15,12 @@ In terminal, just run `./build.sh`. The script will download the latest sitespee
 
 The image will be tagged as `sitespeedio-custom:<sitespeed version specified in package.json>`
 
+### How to use the sitespeed image
+Just run `docker run --rm -v ${pwd}:/sitespeed.io sitespeed:<tag> <website url>`. The result will show in `$pwd` folder. 
+
+Examples: 
+`docker run --rm -v ${pwd}:/sitespeed.io sitespeed:26.1.0 http://www.sitespeed.io/`. 
+
+The default browser is Chrome, if you want to test on Firefox, 
+`docker run --rm -v ${pwd}:/sitespeed.io sitespeed:26.1.0 -b firefox http://www.sitespeed.io/`
+
